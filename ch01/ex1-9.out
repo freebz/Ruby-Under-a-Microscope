@@ -1,0 +1,23 @@
+목록 1-9: Ripper.lex를 실행하는 세 번째 예
+
+$ ruby lex3.rb
+array = []
+10.times do |n|
+  array << n if n < 5
+end
+p array
+--snip--
+ [[3, 2], :on_ident, "array"],
+ [[3, 7], :on_sp, " "],
+ [[3, 8], :on_op, "<<"],
+ [[3, 10], :on_sp, " "],
+ [[3, 11], :on_ident, "n"],
+ [[3, 12], :on_sp, " "],
+ [[3, 13], :on_kw, "if"],
+ [[3, 15], :on_sp, " "],
+ [[3, 16], :on_ident, "n"],
+ [[3, 17], :on_sp, " "],
+ [[3, 18], :on_op, "<"],
+ [[3, 19], :on_sp, " "],
+ [[3, 20], :on_int, "5"],
+--snip--

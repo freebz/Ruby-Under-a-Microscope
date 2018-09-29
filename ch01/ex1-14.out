@@ -1,0 +1,18 @@
+목록 1-14: 옵션을 지정할 경우, 루비는 파서가 한 상태에서 다른 상태로 어떻게 이동하는지를 보여주면서 디버그 정보를 표시한다.
+
+$ ruby -y simple.rb
+Starting parse
+Entering state 0
+Reducing stack by rule 1 (line 850):
+-> $$ = nterm $@1 ()
+Stack now 0
+Entering state 2
+Reading a token: Next token is token tINTEGER ()
+Shifting token tINTEGER ()
+Entering state 41
+Reducing stack by rule 498 (line 4293):
+   $1 = token tINTEGER ()
+-> $$ = nterm simple_numeric ()
+Stack now 0 2
+Entering state 109
+--snip--

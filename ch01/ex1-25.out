@@ -1,0 +1,3 @@
+목록 1-25: parsetree 옵션을 이용해서 코드 AST에 대한 디버그 정보를 표시한다.
+
+$ ruby --dump parsetree your_script.rb

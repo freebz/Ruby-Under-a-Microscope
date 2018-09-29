@@ -1,0 +1,6 @@
+목록 1-20: Ripper.sexp 결과물의 마지막 세 개의 코드 라인
+
+[[:command,
+   [:@ident, "puts", [2, 2]],
+   [:args_add_block, [[:var_ref, [:@ident, "n", [2, 7]]]],
+                     false]]]
