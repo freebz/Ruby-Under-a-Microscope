@@ -1,0 +1,23 @@
+// 목록 3-8: getlocal YARV 명령의 C 코드 구현
+
+/**
+  @c variable
+  @e Get local variable (pointed by `idx' and `level').
+     'level' indicates the nesting depth from the current block.
+  @k level, idx로 지정된 로컬변수 값을 스택에 둔다.
+     level은 블록의 중첩 수준에서 몇 단계에 있는지를 나타낸다.
+ */
+DEFINE_INSN
+getlocal
+(lindex_t idx, rb_num_t level)
+()
+(VALUE val)
+{
+    int i, lev = (int)level;
+    VALUE *ep = GET_EP();
+
+    for (i = 0; i < lev; i++) {
+        ep = GET_PREV_EP(ep);
+    }
+    val = *(ep -idx);
+}

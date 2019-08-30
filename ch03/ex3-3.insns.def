@@ -1,0 +1,15 @@
+// 목록 3-3: putself YARV 명령의 정의
+
+/**
+  @c put
+  @e put self.
+  @k 스택에 self를 푸시하기
+ */
+DEFINE_INSN
+putself
+()
+()
+(VALUE val)
+{
+  val = GET_SELF();
+}
