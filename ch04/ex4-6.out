@@ -1,0 +1,8 @@
+목록 4-6: 목록 4-5에서 생성되는 결과
+
+$ ruby argument_types.rb
+Standard argument 1
+Optional argument 2
+Splat argument array [3, 4, 5]
+Post argument 6
+Block argument #<Proc:0x89674b0@argument_types.rb:9>
