@@ -1,0 +1,10 @@
+목록 2-9: puts 2+2에 대한 YARV 명령
+
+== disasm: <RubyVM::InstructionSequence:<compiled>@<compiled>>==============
+0000 trace            1                                               (   1)
+0002 putself
+0003 putobject        2
+0005 putobject        2
+0007 opt_plus         <callinfo!mid:+, argc:1, ARGS_SKIP>
+0010 opt_send_simple  <callinfo!mid:puts, argc:1, FCALL|ARGS_SKIP>
+0013 leave

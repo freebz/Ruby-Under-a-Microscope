@@ -1,0 +1,25 @@
+목록 2-18: 블록 호출에 대한 YARV 명령 보여주기
+
+== disasm: <RubyVM::InstructionSequence:<compiled>@<compiled>>==========
+0000 trace            1                                               (   1)
+0002 putspecialobject 1
+0004 putspecialobject 2
+0006 putobject        :complex_formula
+0008 putiseq          complex_formula
+0010 opt_send_simple  <callinfo!mid:core#define_method, argc:3, ARGS_SKIP>
+0012 leave
+== disasm: <RubyVM::InstructionSequence:complex_formula@<compiled>>=====
+local table (size: 5, argc: 2 [opts: 0, rest: 2, post: 1, block: -1] s0)
+[ 5] a<Arg>     [ 4] b<Arg>     [ 3] args<Rest> [ 2] c<Post>
+0000 trace            8                                               (   1)
+0002 trace            1                                               (   2)
+0004 getlocal_OP__WC__0 5
+0006 getlocal_OP__WC__0 4
+0008 opt_plus         <callinfo!mid:+, argc:1, ARGS_SKIP>
+0010 getlocal_OP__WC__0 3
+0012 opt_size         <callinfo!mid:size, argc:0, ARGS_SKIP>
+0014 opt_plus         <callinfo!mid:+, argc:1, ARGS_SKIP>
+0016 getlocal_OP__WC__0 2
+0018 opt_plus         <callinfo!mid:+, argc:1, ARGS_SKIP>
+0020 trace            16                                              (   3)
+0022 leave                                                            (   2)
