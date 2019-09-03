@@ -1,0 +1,7 @@
+목록 8-17: lambda 호출 시마다 각각의 스택프레임을 복사할 경우 기대되는 결과
+
+Incrementing from 0 to 1
+Decrementing from 0 to -1
+Incrementing from 1 to 2
+Incrementing from 2 to 3
+Decrementing from -1 to -2

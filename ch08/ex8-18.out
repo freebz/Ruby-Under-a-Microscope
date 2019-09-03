@@ -1,0 +1,7 @@
+목록 8-18: lambda 함수들은 스택에 대한 동일한 힙 복사본을 공유하기 때문에, 목록 8-16을 실행하면 이와 같은 결과를 보여준다.
+
+Incrementing from 0 to 1
+Decrementing from 1 to 0
+Incrementing from 0 to 1
+Incrementing from 1 to 2
+Decrementing from 2 to 1
