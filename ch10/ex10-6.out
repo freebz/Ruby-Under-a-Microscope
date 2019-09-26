@@ -1,0 +1,8 @@
+목록 10-6: -J-XX:+PrintCompilation 옵션을 이용한 결과물
+
+$ jruby -J-XX:+PrintCompilation jit.rb
+    101   1      java.lang.String::hashCode (64 bytes)
+    144   2      java.util.Properties$LineReader::readLine (452 bytes)
+    173   3      sun.nio.cs.UTF_8$Decoder::decodeArrayLoop (553 bytes)
+    200   4      java.lang.String::charAt (33 bytes)
+--snip--

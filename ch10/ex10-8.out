@@ -1,0 +1,9 @@
+목록 10-8: -J-XX:+PrintCompilation 옵션으로 목록 10-7을 실행한 후 grep로 파이핑하여 얻은 출력 결과
+
+$ jruby -J-XX:+PrintCompilation jit.rb | grep org.jruby.RubyArray
+   1809 165      org.jruby.RubyArray::safeArrayRef (11 bytes)
+   1810 166  !   org.jruby.RubyArray::safeArrayRef (12 bytes)
+   1811 167      org.jruby.RubyArray::eltOk (16 bytes)
+   1927 203      org.jruby.RubyArray$INVOKER$i$0$2$sample::call (36 bytes)
+   1928 204  !   org.jruby.RubyArray::sample (834 bytes)
+   1930 205      org.jruby.RubyArray::randomReal (10 bytes)
