@@ -1,0 +1,7 @@
+목록 11-5: MRI가 예외 발생 시 백트레이스를 표시하는 방법
+
+$ ruby iterate.rb
+0
+iterate.rb:3:in 'block in <main>': Stop Here (RuntimeError)
+    from iterate.rb:1:in 'times'
+    from iterate.rb:1:in '<main>'

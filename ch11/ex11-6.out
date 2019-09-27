@@ -1,0 +1,15 @@
+목록 11-6: Rubinius가 예외 발생 시 백트레이스를 나타내는 방법
+
+$ rbx iterate.rb
+0
+An exception occurred running iterate.rb
+    Stop Here (RuntimeError)
+
+Backtrace:
+          { } in Object#__script__ at iterate.rb:3
+	     Integer(Fixnum)#times at kernel/common/integer.rb:83
+	         Object#__script__ at iterate.rb:1
+  Rubinius::CodeLoader#load_script at kernel/delta/codeloader.rb:68
+  Rubinius::CodeLoader.load_script at kernel/delta/codeloader.rb:119
+           Rubinius::Loader#script at kernel/loader.rb:645
+	     Rubinius::Loader#main at kernel/loader.rb:844

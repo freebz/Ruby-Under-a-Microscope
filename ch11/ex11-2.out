@@ -1,0 +1,21 @@
+목록 11-2: -B 옵션과 함께 rbx compile 명령을 이용하여 Rubinius 바이트코드 명령 나타내기
+
+$ rbx compile simple.rb -B
+============= :__script__ ==============
+Arguments:   0 required, 0 post, 0 total
+Arity:       0
+Locals:      0
+Stack size:  3
+Literals:    2: :+, :puts
+Lines to IP: 1: 0..12
+
+0000:  push_self
+0001:  meta_push_2
+0002:  meta_push_2
+0003:  send_stack                :+, 1
+0006:  allow_private
+0007:  send_stack                :puts, 1
+0010:  pop
+0011:  push_true
+0012:  ret
+----------------------------------------
